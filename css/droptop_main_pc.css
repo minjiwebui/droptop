@@ -146,6 +146,81 @@ li {
     font-size: 40px;
     color: var(--colorWhite);
 }
+.sec04{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    background: var(--colorWhite);
+}
+.sec04 .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+.sec04 .txtbox{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.sec04 .txtbox h3{
+    font-size: 50px;
+    font-weight: 900;
+}
+.sec04 .txtbox p{
+    font-size: 30px;
+}
+.sec04 .snsallbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.sec04 .snsbox{
+    height: 467px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border: 2px solid var(--colorDarkBlue);
+    box-shadow: 35px 35px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.sec04 .snsbox > div:first-of-type{
+    width: 340px;
+    height: 340px;
+    cursor: pointer;
+}
+.sec04 .snsbox .snsimg01{
+    background: url(/droptop/images/droptop_main/sns01_pc.png) no-repeat 50% 50% / cover;
+}
+.sec04 .snsbox .snsimg02{
+    background: url(/droptop/images/droptop_main/sns02_pc.png) no-repeat 50% 50% / cover;
+}
+.sec04 .snsbox .snsimg03{
+    background: url(/droptop/images/droptop_main/sns03_pc.png) no-repeat 50% 50% / cover;
+}
+.sec04 .snsbox .snsimg04{
+    background: url(/droptop/images/droptop_main/sns04_pc.png) no-repeat 50% 50% / cover;
+}
+.sec04 .snsbox .snsimg05{
+    background: url(/droptop/images/droptop_main/sns05_pc.png) no-repeat 50% 50% / cover;
+}
+.sec04 .snsbox .iconbox{
+    display: flex;
+    gap: 15px;
+}
+.sec04 .snsbox .iconbox i{
+    cursor: pointer;
+    font-size: 25px;
+}
+.sec04 .snsbox .iconbox i:first-of-type{
+    color: red;
+}
 footer{
     width: 100%;
     display: flex;
@@ -182,6 +257,7 @@ footer .logo{
     background: url(/droptop/images/droptop_main/logo_pc.png) no-repeat 50% 50% / cover;
     width: 200px;
     height: 60px;
+    cursor: pointer;
 }
 footer .footertxt{
     display: flex;
@@ -229,6 +305,9 @@ footer .sns{
     display: flex;
     gap: 7px;
 }
+footer .sns > div{
+    cursor: pointer;
+}
 footer .sns .insta{
     background: url(/droptop/images/droptop_main/insta_pc.png) no-repeat 50% 50% / cover;
     width: 28px;
@@ -263,6 +342,7 @@ footer .sns .blog{
     border-radius: 18px;
     background: var(--colorWhite);
     box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 .fixedbt .btimg01{
     background: url(/droptop/images/droptop_main/fixedbt01_pc.png);
