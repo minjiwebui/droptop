@@ -13,7 +13,7 @@
     margin: 0;
     box-sizing: border-box;
     /* line-height: 1; */
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     word-break: keep-all;
     letter-spacing: -0.02rem;
     color: var(--colorBlack);
@@ -50,6 +50,7 @@ li {
     background: url(/droptop/images/droptop_main/sec01_bgcolor_pc.png) no-repeat 50% 50% / cover;
     width: 100%;
     height: 905px;
+    position: relative;
 }
 header{
     width: 100%;
@@ -100,22 +101,28 @@ header .inner p{
 .sec02{
     width: 100%;
     height: 1200px;
-    display: flex;
-    align-items: center;
     position: relative;
 }
 .sec02 .swiper{
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .sec02 .swiper-wrapper{
+    width: 70%;
+    height: 60%;
     display: flex;
     gap: 70px;
+    margin: 0 0 0 180px;
 }
 .sec02 .swiper-slide.img01{
-    width: 70%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* display: none; */
 }
 .sec02 .swiper-slide.img01 .title{
     display: flex;
@@ -151,7 +158,7 @@ header .inner p{
     align-items: center;
     gap: 30px;
     width: 100%;
-    height: 682px;
+    height: 100%;
     border-top: 10px solid var(--colorOrange);
     box-shadow: 0px 0px 26px 0 rgba(238, 124, 28, 1.0);
 }
@@ -170,11 +177,12 @@ header .inner p{
 }
 .sec02 .swiper-slide.img01 .imgbox01 .concept{
     background: url(/droptop/images/droptop_main/sec02img01_pc.png) no-repeat 50% 50% / cover;
-    width: 1082px;
+    width: 80%;
     height: 369px;
 }
 .sec02 .swiper-slide.img02{
-    width: 30%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -183,14 +191,12 @@ header .inner p{
     font-size: 50px;
     font-weight: 700;
     color: var(--colorDarkGrey);
-    letter-spacing: 25px; 
+    letter-spacing: 25px;
 }
 .sec02 .swiper-slide.img02 .imgbox02{
     background: url(/droptop/images/droptop_main/sec02img02_pc.png) no-repeat 50% 50% / cover;
-    width: 1232px;
-    height: 553px;
-    /* width: 100%; */
-    /* height: 50%; */
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -204,7 +210,7 @@ header .inner p{
     align-items: center;
     gap: 15px;
     background: var(--colorDarkBlue);
-    width: 50%;
+    width: 40%;
     height: 40%;
     border-radius: 10px;
 }
@@ -224,6 +230,9 @@ header .inner p{
     font-weight: 900;
     bottom: -70px;
     right: 10px;
+}
+.sec02 .btbox{
+    display: none;
 }
 .sec03{
     display: flex;
@@ -298,8 +307,7 @@ header .inner p{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 216px;
-    height: 68px;
+    padding: 0px 60px 10px 60px;
     background: var(--colorDarkBlue);
     border-radius: 10px;
 }
@@ -431,8 +439,15 @@ footer .bottom{
 footer .top .inner{
     display: flex;
     justify-content: center;
-    width: 53%;
+    width: 55%;
     height: 76%;
+}
+footer .bottom .inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 100%;
 }
 footer .awards{
     background: url(/droptop/images/droptop_main/awards_pc.png) no-repeat 50% 50% / cover;
@@ -441,15 +456,16 @@ footer .awards{
 }
 footer .logo{
     background: url(/droptop/images/droptop_main/logo_pc.png) no-repeat 50% 50% / cover;
-    width: 10%;
+    width: 30%;
     height: 45%;
     cursor: pointer;
 }
 footer .footertxt{
+    width: 115%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 107px 0 0;
+    margin: 0 70px 0 0;
 }
 footer .footertxt p:first-of-type{
     color: var(--colorDarkGrey);
@@ -479,6 +495,7 @@ footer .footertxt a:nth-of-type(6)::after{
 footer .footertxt p:nth-of-type(2),
 footer .footertxt p:nth-of-type(3){
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
 }

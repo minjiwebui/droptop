@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* artbread_sub2 tablet */
+
+.sec01{
+    height: 550px;
+}
+header .inner{
+    width: 80%;
+    justify-content: center;
+}
+header .nav{
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+}
+header .nav li{
+    font-size: 27px;
+}
+header .inner > a{
+    display: none;
+}
+.sec01 .swiper{
+    width: 85%;
+    height: 500px;
+}
+.sec02::after{
+    right: 45px;
+    font-size: 180px;
+}
+.sec03 .inner{
+    width: 100%;
+}
+.sec03 .menubox{
+    height: 25%;
+}
+.sec03 .menu p{
+    text-align: center;
+}
+.sec03 .menu p:first-of-type{
+    font-size: 17px;
+}
+.sec03 .menu p:last-of-type{
+    font-size: 12px;
+}
+.sec03 a{
+    padding: 0px 45px 10px 45px;
+}
+.sec03 a p{
+    font-size: 35px;
+}
+.sec04 .snsbox:nth-of-type(1),
+.sec04 .snsbox:nth-of-type(5){
+    display: none;
+}
+.sec04 .snsallbox{
+    height: 50%;
+}
+.sec04 .snsbox{
+    height: 70%;
+}
+.sec04::before{
+    left: 146px;
+    font-size: 180px;
+}
+footer .top .inner{
+    width: 90%;
+    height: 65%;
+}
+footer .bottom .inner{
+    width: 90%;
+}
+footer .logo{
+    width: 15%;
+    height: 30%;
+}
+footer .footertxt{
+    width: 75%;
+    margin: 0 20px 0 0;
+}
+.fixedbt{
+    right: 30px;
+    top: 30%;
+}
+.fixedbt .button{
+    width: 117px;
+    height: 115px;
+    gap: 10px;
+}
+.fixedbt .btimg01{
+    width: 43px;
+    height: 42px;
+}
+.fixedbt .btimg02{
+    width: 65px;
+    height: 56px;
+}
+.fixedbt .btimg03{
+    width: 43px;
+    height: 42px;
+}
+.fixedbt p{
+    font-size: 15px;
+}
+

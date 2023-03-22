@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* artbread_sub2 mobile */
+
+header{
+    display: none;
+}
+.sec01 .swiper{
+    width: 100%;
+    height: 100%;
+}
+.sec01 .swiper-slide.img01 {
+    background: url(/droptop/images/droptop_main/slide01_m.png) no-repeat 50% 50% / cover;
+    cursor: pointer;
+}
+.sec01 header .navmb{
+    background: var(--colorOrange);
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    padding: 100px 47px;
+    gap: 20px;
+}
+.sec01 header .navmb.on {
+    height: 100vh;
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+.sec01 header > i{
+    display: block;
+    position: relative;
+    z-index: 600;
+}
+.sec02{
+    height: 300px;
+}
+.sec02 .swiper{
+    display: none;
+}
+.sec02 .btbox{
+    display: flex;
+    flex-direction: column;
+}
+.sec02 .btbox > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--colorWhite);
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    padding: 15px 0 15px 0;
+}
+.sec02 .btbox > a:first-of-type{
+    background: var(--colorOrange);
+}
+.sec02 .btbox > a:last-of-type{
+    background: var(--colorDarkGrey);
+}
+.sec02::after{
+    right: 45px;
+    bottom: -27px;
+    font-size: 80px;
+}
+.sec03{
+    height: 700px;
+}
+.sec03 .inner{
+    width: 90%;
+    height: 100%;
+}
+.sec03 h3{
+    font-size: 30px;
+}
+.sec03 .menubox{
+    flex-flow: column wrap;
+    height: 30%;
+}
+.sec03 .menu{
+    width: 50%;
+}
+.sec03 a{
+    display: none;
+}
+.sec04{
+    height: 700px;
+}
+.sec04 .inner{
+    gap: 55px;
+}
+.sec04 .txtbox{
+    gap: 15px;
+}
+.sec04 .txtbox h3{
+    font-size: 30px;
+}
+.sec04 .txtbox p{
+    font-size: 20px;
+}
+.sec04 .snsallbox{
+    height: 40%;
+    gap: 20px;
+}
+.sec04 .snsbox{
+    height: 75%;
+    padding: 7px;
+}
+.sec04 .snsbox .iconbox{
+    gap: 7px;
+}
+.sec04 .snsbox .iconbox i{
+    font-size: 13px;
+}
+.sec04::before{
+    top: -36px;
+    left: 85px;
+    font-size: 80px;
+}
+.fixedbt{
+    display: none;
+}
+
+
+
+
