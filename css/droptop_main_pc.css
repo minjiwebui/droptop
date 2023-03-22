@@ -456,8 +456,13 @@ footer .footertxt p:first-of-type{
     font-weight: 600;
     font-size: 14px;
     margin: 0 0 5px 0;
+    display: flex;
+    gap: 15px;
 }
-/* footer .footertxt a:nth-of-type(1)::after,
+footer .footertxt a{
+    position: relative;
+}
+footer .footertxt a:nth-of-type(1)::after,
 footer .footertxt a:nth-of-type(2)::after,
 footer .footertxt a:nth-of-type(3)::after,
 footer .footertxt a:nth-of-type(4)::after,
@@ -465,16 +470,33 @@ footer .footertxt a:nth-of-type(5)::after,
 footer .footertxt a:nth-of-type(6)::after{
     width: 1px;
     height: 12px;
-    background: #555;
+    background: var(--colorDarkGrey);
     content: "";
     position: absolute;
-    top: 3px;
-    right: -6px;
-} */
+    top: 5px;
+    right: -8px;
+}
 footer .footertxt p:nth-of-type(2),
 footer .footertxt p:nth-of-type(3){
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+footer .footertxt p:nth-of-type(2) span,
+footer .footertxt p:nth-of-type(3) span{
+    position: relative;
+}
+footer .footertxt p:nth-of-type(2) span:first-of-type::after,
+footer .footertxt p:nth-of-type(3) span:nth-of-type(1)::after,
+footer .footertxt p:nth-of-type(3) span:nth-of-type(2)::after,
+footer .footertxt p:nth-of-type(3) span:nth-of-type(3)::after{
+    width: 1px;
+    height: 11px;
+    background: var(--colorGrey);
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -6px;
 }
 footer .footertxt p:nth-of-type(2) span,
 footer .footertxt p:nth-of-type(3) span,
@@ -483,7 +505,7 @@ footer .footertxt p:nth-of-type(4){
     font-size: 13px;
 }
 footer .footertxt p:last-of-type{
-    color: var(--colorLightGrey);
+    color: var(--colorGrey);
     font-size: 14px;
     margin: 5px 0 0 0;
 }
