@@ -2,7 +2,7 @@
 
 /* artbread_sub2 mobile */
 
-header{
+header .inner{
     display: none;
 }
 .sec01 .swiper{
@@ -14,8 +14,8 @@ header{
     cursor: pointer;
 }
 .sec01 header .navmb{
-    background: var(--colorOrange);
-    width: 50%;
+    background: rgba(238, 124, 28, 0.56);
+    width: 60%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -27,7 +27,10 @@ header{
     transform: translateX(-100%);
     transition: transform 0.5s;
     padding: 100px 47px;
-    gap: 20px;
+    gap: 150px;
+}
+.sec01 header .navmb .subnavmb{
+    margin: 40px 0 0 0;
 }
 .sec01 header .navmb.on {
     height: 100vh;
@@ -36,8 +39,27 @@ header{
 }
 .sec01 header > i{
     display: block;
-    position: relative;
-    z-index: 600;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1000;
+    color: var(--colorWhite);
+    font-size: 40px;
+    cursor: pointer;
+}
+.sec01 header > i.fa-times{
+    font-size: 50px;
+}
+.sec01 header .navmb li,
+.sec01 header .navmb p{
+    font-size: 28px;
+    color: var(--colorWhite);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sec01 header .navmb ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .sec02{
     height: 300px;
