@@ -46,9 +46,6 @@ a:visited {
 li {
     list-style: none;
 }
-body{
-    position: relative;
-}
 .sec01{
     background: url(/droptop/images/droptop_main/sec01_bgcolor_pc.png) no-repeat 50% 50% / cover;
     width: 100%;

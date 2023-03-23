@@ -172,6 +172,7 @@ nav .navmb ul{
 .sec04::after{
     top: 95px;
     left: 261px;
+    overflow: hidden;
 }
 footer{
     height: 250px;

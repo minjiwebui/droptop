@@ -9,14 +9,14 @@ var swiper1 = new Swiper(".basic01", {
     // },
     slidesPerView: 1,
 });
-// sec02 슬라이드
+//sec02 슬라이드
 // var swiper2 = new Swiper(".basic02", {
 //     slidesPerView: 1.3,
 // });
 // sec 02 리사이징 시, 슬라이드 해제
 var swiper2 = undefined;
     function initBenefit() {
-        if (wiw < 641 && swiper2 == undefined) {
+        if (wiw > 1024 && swiper2 == undefined) {
             swiper2 = new Swiper('.basic02', {
                 slidesPerView: 1.3,
             });

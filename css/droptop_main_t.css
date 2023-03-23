@@ -102,6 +102,7 @@ header .inner > a{
 .sec04::after{
     top: 250px;
     right: -250px;
+    overflow: hidden;
 }
 footer .top .inner{
     width: 90%;
