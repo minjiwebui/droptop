@@ -10,7 +10,7 @@ var swiper1 = new Swiper(".basic01", {
     slidesPerView: 1,
 });
 // header 모바일 서브메뉴(공통요소)
-$("header > .fa-bars").click(function () {
+$("nav > .fa-bars").click(function () {
     $(".navmb").toggleClass("on");
     $(this).toggleClass("fa-times");
 });

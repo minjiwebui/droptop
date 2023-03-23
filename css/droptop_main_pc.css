@@ -13,7 +13,7 @@
     margin: 0;
     box-sizing: border-box;
     /* line-height: 1; */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     word-break: keep-all;
     letter-spacing: -0.02rem;
     color: var(--colorBlack);
@@ -55,7 +55,6 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
 }
 header .inner{
     width: 75%;
@@ -79,6 +78,9 @@ header .inner p{
     color: var(--colorWhite);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 28px;
+}
+nav{
+    display: none;
 }
 .sec01 .swiper{
     width: 80%;
@@ -364,6 +366,7 @@ header .inner p{
     padding: 15px;
     border: 2px solid var(--colorDarkBlue);
     box-shadow: 35px 35px 10px 5px rgba(0, 0, 0, 0.1);
+    background: var(--colorWhite);
 }
 .sec04 .snsbox:nth-of-type(1),
 .sec04 .snsbox:nth-of-type(3),
@@ -543,6 +546,9 @@ footer .sns .facebook{
 }
 footer .sns .blog{
     background: url(/droptop/images/droptop_main/blog_pc.png) no-repeat 50% 50% / cover;
+}
+.logoboxmb{
+    display: none;
 }
 .fixedbt{
     display: flex;

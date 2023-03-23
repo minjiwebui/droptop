@@ -2,7 +2,7 @@
 
 /* artbread_sub2 mobile */
 
-header .inner{
+header{
     display: none;
 }
 .sec01 .swiper{
@@ -13,7 +13,10 @@ header .inner{
     background: url(/droptop/images/droptop_main/slide01_m.png) no-repeat 50% 50% / cover;
     cursor: pointer;
 }
-.sec01 header .navmb{
+nav{
+    display: flex;
+}
+nav .navmb{
     background: rgba(238, 124, 28, 0.56);
     width: 60%;
     height: 100vh;
@@ -29,34 +32,36 @@ header .inner{
     padding: 100px 47px;
     gap: 150px;
 }
-.sec01 header .navmb .subnavmb{
+nav .navmb .subnavmb{
     margin: 40px 0 0 0;
 }
-.sec01 header .navmb.on {
+nav .navmb.on {
     height: 100vh;
     transform: translateX(0%);
     transition: transform 0.5s;
 }
-.sec01 header > i{
+nav > i{
     display: block;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 50px;
     z-index: 1000;
     color: var(--colorWhite);
     font-size: 40px;
     cursor: pointer;
+    text-shadow: 0 0 3px var(--colorBlack);
 }
-.sec01 header > i.fa-times{
+nav > i.fa-times{
     font-size: 50px;
+    text-shadow: unset;
 }
-.sec01 header .navmb li,
-.sec01 header .navmb p{
+nav .navmb li,
+nav .navmb p{
     font-size: 28px;
     color: var(--colorWhite);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.sec01 header .navmb ul{
+nav .navmb ul{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -94,7 +99,8 @@ header .inner{
     font-size: 80px;
 }
 .sec03{
-    height: 700px;
+    height: 100%;
+    padding: 35px 0 100px 0;
 }
 .sec03 .inner{
     width: 90%;
@@ -104,11 +110,24 @@ header .inner{
     font-size: 30px;
 }
 .sec03 .menubox{
-    flex-flow: column wrap;
-    height: 30%;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100%;
 }
 .sec03 .menu{
+    width: 205px;
+    height: 205px;
+    border: 7px solid var(--colorOrange);
+}
+.sec03 .menu > div{
     width: 50%;
+    height: 50%;
+}
+.sec03 .menu p:first-of-type{
+    font-size: 16px;
+}
+.sec03 .menu p:last-of-type{
+    font-size: 11px;
 }
 .sec03 a{
     display: none;
@@ -146,6 +165,73 @@ header .inner{
     top: -36px;
     left: 85px;
     font-size: 80px;
+}
+footer{
+    height: 250px;
+}
+footer .top{
+    height: 20%;
+}
+footer .bottom{
+    height: 80%;
+}
+footer .top .inner{
+    width: 95%;
+    height: 45%;
+}
+footer .bottom .inner{
+    flex-direction: column;
+    width: 95%;
+}
+footer .footertxt{
+    width: 95%;
+    height: 100%;
+}
+footer .footertxt p:first-of-type{
+    font-size: 12px;
+    gap: 9px;
+}
+footer .footertxt p:nth-of-type(2) span,
+footer .footertxt p:nth-of-type(3) span,
+footer .footertxt p:nth-of-type(4),
+footer .footertxt p:nth-of-type(5){
+    font-size: 11px;
+}
+footer .logo{
+    width: 30%;
+    height: 50%;
+}
+.logoboxmb{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer .footertxt a:nth-of-type(1)::after,
+footer .footertxt a:nth-of-type(2)::after,
+footer .footertxt a:nth-of-type(3)::after,
+footer .footertxt a:nth-of-type(4)::after,
+footer .footertxt a:nth-of-type(5)::after,
+footer .footertxt a:nth-of-type(6)::after{
+    height: 11px;
+    top: 4px;
+    right: -5px;
+}
+footer .footertxt p:nth-of-type(2) span:first-of-type::after{
+    height: 10px;
+    top: 4px;
+}
+footer .footertxt p:nth-of-type(3) span:nth-of-type(1)::after,
+footer .footertxt p:nth-of-type(3) span:nth-of-type(2)::after,
+footer .footertxt p:nth-of-type(3) span:nth-of-type(3)::after{
+    height: 25px;
+    top: 5px;
+    right: -1px;
+}
+footer .bottom .inner > .logo,
+footer .bottom .inner > .sns{
+    display: none;
 }
 .fixedbt{
     display: none;

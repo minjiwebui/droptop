@@ -15,7 +15,7 @@ header .nav{
     justify-content: center;
 }
 header .nav li{
-    font-size: 27px;
+    font-size: 25px;
 }
 header .inner > a{
     display: none;
@@ -28,11 +28,14 @@ header .inner > a{
     right: 45px;
     font-size: 180px;
 }
+.sec03{
+    height: 920px;
+}
 .sec03 .inner{
     width: 100%;
 }
 .sec03 .menubox{
-    height: 25%;
+    height: 27%;
 }
 .sec03 .menu p{
     text-align: center;
