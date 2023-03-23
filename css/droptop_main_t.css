@@ -24,7 +24,36 @@ header .inner > a{
     width: 85%;
     height: 500px;
 }
+.sec02{
+    height: 100%;
+}
+.sec02 .swiper{
+    margin: 120px 0 230px 0;
+    justify-content: center;
+}
+.sec02 .swiper-wrapper{
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+    margin: unset;
+}
+.sec02 .swiper-slide.img01 .imgbox01{
+    padding: 25px 0 20px 0;
+}
+.sec02 .swiper-slide.img01 .imgbox01 .txtbox h3{
+    font-size: 35px;
+}
+.sec02 .swiper-slide.img01 .imgbox01 .txtbox p{
+    font-size: 20px;
+}
+.sec02 .swiper-slide.img01 .imgbox01 .concept{
+    height: 270px;
+}
+.sec02 .swiper-slide.img02 .imgbox02{
+    height: 500px;
+}
 .sec02::after{
+    bottom: -300px;
     right: 45px;
     font-size: 180px;
 }
