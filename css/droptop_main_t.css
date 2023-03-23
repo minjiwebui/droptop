@@ -57,6 +57,10 @@ header .inner > a{
     right: 45px;
     font-size: 180px;
 }
+.sec02::before{
+    top: -119px;
+    left: -287px;
+}
 .sec03{
     height: 920px;
 }
@@ -94,6 +98,10 @@ header .inner > a{
 .sec04::before{
     left: 146px;
     font-size: 180px;
+}
+.sec04::after{
+    top: 250px;
+    right: -250px;
 }
 footer .top .inner{
     width: 90%;

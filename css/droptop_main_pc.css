@@ -46,6 +46,9 @@ a:visited {
 li {
     list-style: none;
 }
+body{
+    position: relative;
+}
 .sec01{
     background: url(/droptop/images/droptop_main/sec01_bgcolor_pc.png) no-repeat 50% 50% / cover;
     width: 100%;
@@ -162,6 +165,7 @@ nav{
     height: 100%;
     border-top: 10px solid var(--colorOrange);
     box-shadow: 0px 0px 26px 0 rgba(238, 124, 28, 1.0);
+    background: var(--colorWhite);
 }
 .sec02 .swiper-slide.img01 .imgbox01 .txtbox{
     display: flex;
@@ -224,6 +228,15 @@ nav{
 .sec02 .swiper-slide.img02 .imgbox02 .txtbox h3{
     color: var(--colorWhite);
     font-size: 50px;
+}
+.sec02::before{
+    content: "";
+    background-image: url(/droptop/images//droptop_main/circle01_pc.png);
+    position: absolute;
+    top: 7px;
+    left: -276px;
+    width: 720px;
+    height: 720px;
 }
 .sec02::after{
     content: "DROPTOP";
@@ -368,6 +381,7 @@ nav{
     border: 2px solid var(--colorDarkBlue);
     box-shadow: 35px 35px 10px 5px rgba(0, 0, 0, 0.1);
     background: var(--colorWhite);
+    z-index: 90;
 }
 .sec04 .snsbox:nth-of-type(1),
 .sec04 .snsbox:nth-of-type(3),
@@ -418,11 +432,23 @@ nav{
     top: -85px;
     left: 10px;
 }
+.sec04::after{
+    content: "";
+    background-image: url(/droptop/images//droptop_main/circle02_pc.png);
+    position: absolute;
+    top: 127px;
+    right: -2px;
+    width: 540px;
+    height: 540px;
+    transform: rotate(327deg);
+    overflow: hidden;
+}
 footer{
     width: 100%;
     height: 220px;
     display: flex;
     flex-direction: column;
+    z-index: 100;
 }
 footer .top{
     width: 100%;

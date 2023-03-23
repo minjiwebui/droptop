@@ -98,6 +98,9 @@ nav .navmb ul{
     bottom: -27px;
     font-size: 80px;
 }
+.sec02::before{
+    display: none;
+}
 .sec03{
     height: 100%;
     padding: 35px 0 100px 0;
@@ -165,6 +168,10 @@ nav .navmb ul{
     top: -36px;
     left: 85px;
     font-size: 80px;
+}
+.sec04::after{
+    top: 95px;
+    left: 261px;
 }
 footer{
     height: 250px;
