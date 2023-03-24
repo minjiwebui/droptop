@@ -234,8 +234,13 @@ nav{
     left: -276px;
     width: 720px;
     height: 720px;
-    transform: rotate(360deg);
-    transition: 0.5s;
+    animation: rotate 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .sec02::after{
     content: "DROPTOP";
@@ -441,7 +446,13 @@ nav{
     right: -2px;
     width: 540px;
     height: 540px;
-    transform: rotate(327deg);
+    animation: rotate2 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate2{
+    100%{
+        transform: rotate(360deg);
+    }
 }
 footer{
     width: 100%;
