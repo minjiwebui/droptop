@@ -66,6 +66,8 @@ nav .navmb ul{
     flex-direction: column;
     gap: 20px;
 }
+.sec01 .swiper-slide.img02{display: none;}
+.sec01 .swiper-slide.img03{display: none;}
 .sec02{
     height: 300px;
 }

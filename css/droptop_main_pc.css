@@ -234,6 +234,8 @@ nav{
     left: -276px;
     width: 720px;
     height: 720px;
+    transform: rotate(360deg);
+    transition: 0.5s;
 }
 .sec02::after{
     content: "DROPTOP";
@@ -244,6 +246,7 @@ nav{
     bottom: -70px;
     right: 10px;
 }
+
 .sec02 .btbox{
     display: none;
 }
