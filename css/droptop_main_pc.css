@@ -49,7 +49,8 @@ li {
 .sec01{
     background: url(/droptop/images/droptop_main/sec01_bgcolor_pc.png) no-repeat 50% 50% / cover;
     width: 100%;
-    height: 905px;
+    height: 900px;
+    position: relative;
 }
 header{
     width: 100%;
@@ -67,26 +68,26 @@ header .nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 50px;
+    gap: 40px;
 }
 header .nav li{
     color: var(--colorWhite);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 28px;
+    font-size: 26px;
 }
 header .inner p{
     color: var(--colorWhite);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 28px;
+    font-size: 26px;
 }
 nav{
     display: none;
 }
 .sec01 .swiper{
-    width: 80%;
-    height: 865px;
+    width: 85%;
+    height: 850px;
     display: flex;
-    z-index: 50;
+    z-index: 100;
 }
 .sec01 .swiper-slide.img01 {
     background: url(/droptop/images/droptop_main/slide01_pc.png) no-repeat 50% 50% / cover;
@@ -102,8 +103,9 @@ nav{
 }
 .sec02{
     width: 100%;
-    height: 1200px;
+    height: 100%;
     position: relative;
+    margin: 140px 0;
 }
 .sec02 .swiper{
     width: 100%;
@@ -157,30 +159,32 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
-    height: 100%;
+    height: 555px;
     border-top: 10px solid var(--colorOrange);
     box-shadow: 0px 0px 26px 0 rgba(238, 124, 28, 1.0);
     background: var(--colorWhite);
+    padding: 20px 0;
+    z-index: 1000;
 }
 .sec02 .swiper-slide.img01 .imgbox01 .txtbox{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     text-align: center;
 }
 .sec02 .swiper-slide.img01 .imgbox01 .txtbox h3{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
 }
 .sec02 .swiper-slide.img01 .imgbox01 .txtbox p{
-    font-size: 27px;
+    font-size: 22px;
 }
 .sec02 .swiper-slide.img01 .imgbox01 .concept{
     background: url(/droptop/images/droptop_main/sec02img01_pc.png) no-repeat 50% 50% / cover;
     width: 80%;
-    height: 369px;
+    height: 350px;
 }
 .sec02 .swiper-slide.img02{
     width: 100%;
@@ -198,7 +202,7 @@ nav{
 .sec02 .swiper-slide.img02 .imgbox02{
     background: url(/droptop/images/droptop_main/sec02img02_pc.png) no-repeat 50% 50% / cover;
     width: 100%;
-    height: 650px;
+    height: 570px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -248,7 +252,7 @@ nav{
     position: absolute;
     font-size: 200px;
     font-weight: 900;
-    bottom: -70px;
+    bottom: -200px;
     right: 10px;
 }
 
@@ -260,17 +264,18 @@ nav{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 1026px;
+    height: 100%;
     background: var(--colorPinkCoral);
+    overflow: hidden;
 }
 .sec03 .inner{
     width: 80%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 100px;
+    padding: 130px 0;
 }
 .sec03 h3{
     display: flex;
@@ -279,14 +284,14 @@ nav{
     font-weight: 900;
 }
 .sec03 .menubox{
-    width: 100%;
-    height: 37%;
+    /* width: 100%;
+    height: 100%; */
     display: flex;
     flex-direction: row;
 }
 .sec03 .menu{
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -341,14 +346,14 @@ nav{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 1200px;
+    height: 100%;
     background: var(--colorWhite);
     position: relative;
     overflow: hidden;
+    padding: 150px 0;
 }
 .sec04 .inner{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -370,7 +375,7 @@ nav{
 }
 .sec04 .snsallbox{
     width: 100%;
-    height: 50%;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -379,7 +384,7 @@ nav{
 }
 .sec04 .snsbox{
     width: 100%;
-    height: 75%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -399,8 +404,8 @@ nav{
     align-self: flex-end;
 }
 .sec04 .snsbox > div:first-of-type{
-    width: 100%;
-    height: 75%;
+    width: 300px;
+    height: 300px;
     cursor: pointer;
 }
 .sec04 .snsbox .snsimg01{
@@ -456,7 +461,7 @@ nav{
 }
 footer{
     width: 100%;
-    height: 220px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     z-index: 100;
@@ -480,25 +485,27 @@ footer .bottom{
 footer .top .inner{
     display: flex;
     justify-content: center;
-    width: 55%;
-    height: 76%;
+    width: 70%;
+    height: 100%;
+    padding: 10px 0;
 }
 footer .bottom .inner{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 55%;
+    width: 70%;
     height: 100%;
+    padding: 20px 0;
 }
 footer .awards{
     background: url(/droptop/images/droptop_main/awards_pc.png) no-repeat 50% 50% / cover;
-    width: 100%;
-    height: 100%;
+    width: 1200px;
+    height: 50px;
 }
 footer .logo{
     background: url(/droptop/images/droptop_main/logo_pc.png) no-repeat 50% 50% / cover;
-    width: 30%;
-    height: 45%;
+    width: 300px;
+    height: 50px;
     cursor: pointer;
 }
 footer .footertxt{
@@ -593,8 +600,8 @@ footer .sns .blog{
     flex-direction: column;
     gap: 15px;
     position: fixed;
-    right: 120px;
-    top: 50%;
+    right: 70px;
+    top: 225px;
     z-index: 100;
 }
 .fixedbt .button{
