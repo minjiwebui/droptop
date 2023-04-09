@@ -89,12 +89,6 @@ header .inner > a{
 .sec04 .snsbox:nth-of-type(5){
     display: none;
 }
-.sec04 .snsallbox{
-    height: 50%;
-}
-.sec04 .snsbox{
-    height: 70%;
-}
 .sec04::before{
     left: 146px;
     font-size: 180px;
@@ -110,9 +104,13 @@ footer .top .inner{
 footer .bottom .inner{
     width: 90%;
 }
+footer .awards{
+    width: 1000px;
+    height: 35px;
+}
 footer .logo{
-    width: 15%;
-    height: 30%;
+    width: 200px;
+    height: 60px;
 }
 footer .footertxt{
     width: 75%;

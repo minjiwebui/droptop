@@ -70,6 +70,7 @@ nav .navmb ul{
 .sec01 .swiper-slide.img03{display: none;}
 .sec02{
     height: 300px;
+    margin: 0;
 }
 .sec02 .swiper{
     display: none;
@@ -105,11 +106,13 @@ nav .navmb ul{
 }
 .sec03{
     height: 100%;
-    padding: 35px 0 100px 0;
+    padding: 100px 0 100px 0;
 }
 .sec03 .inner{
     width: 90%;
     height: 100%;
+    padding: 0;
+    gap: 50px;
 }
 .sec03 h3{
     font-size: 30px;
@@ -153,12 +156,17 @@ nav .navmb ul{
     font-size: 20px;
 }
 .sec04 .snsallbox{
-    height: 40%;
+    height: 400px;
     gap: 20px;
 }
 .sec04 .snsbox{
     height: 75%;
     padding: 7px;
+}
+.sec04 .snsbox > div:first-of-type{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
 }
 .sec04 .snsbox .iconbox{
     gap: 7px;
@@ -175,9 +183,6 @@ nav .navmb ul{
     top: 95px;
     left: 261px;
 }
-footer{
-    height: 250px;
-}
 footer .top{
     height: 20%;
 }
@@ -191,10 +196,12 @@ footer .top .inner{
 footer .bottom .inner{
     flex-direction: column;
     width: 95%;
+    gap: 10px;
 }
 footer .footertxt{
     width: 95%;
     height: 100%;
+    margin: 0;
 }
 footer .footertxt p:first-of-type{
     font-size: 12px;
@@ -206,9 +213,13 @@ footer .footertxt p:nth-of-type(4),
 footer .footertxt p:nth-of-type(5){
     font-size: 11px;
 }
+footer .awards{
+    width: 500px;
+    height: 20px;
+}
 footer .logo{
-    width: 30%;
-    height: 50%;
+    width: 150px;
+    height: 50px;
 }
 .logoboxmb{
     width: 100%;

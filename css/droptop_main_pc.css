@@ -505,15 +505,15 @@ footer .awards{
 footer .logo{
     background: url(/droptop/images/droptop_main/logo_pc.png) no-repeat 50% 50% / cover;
     width: 300px;
-    height: 50px;
+    height: 65px;
     cursor: pointer;
 }
 footer .footertxt{
-    width: 115%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 70px 0 0;
+    /* margin: 0 70px 0 0; */
 }
 footer .footertxt p:first-of-type{
     color: var(--colorDarkGrey);
